@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom utility: slower spin for React logo */
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 9s linear infinite;
+  }
+}
+
+/* Optional: smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent any page scroll */
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
