@@ -36,7 +36,7 @@ export default function HomeTab() {
 
   return (
     <div>
-      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mt-15">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mt-5 sm:mt-15">
         AJIT SINGH YADAV
       </h1>
       <p className="mt-6 max-w-2xl text-black/70 dark:text-white/70">
@@ -47,7 +47,7 @@ export default function HomeTab() {
         Creative <span className="text-cyan-500">{subText}</span>
         <span className="border-r-2 border-cyan-500 animate-pulse ml-1"></span>
       </h2>
-      <div className="mt-20 flex gap-4">
+      <div className="mt-10 sm:mt-20 flex gap-4">
         <NavLink
           to="/contact"
           className="rounded-2xl border px-6 py-3 text-sm font-semibold transition
