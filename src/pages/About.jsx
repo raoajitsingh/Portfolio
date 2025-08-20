@@ -28,22 +28,22 @@ export default function AboutTab() {
   ];
 
   return (
-    <section className="space-y-10 pb-24 min-w-0">
+    <section className="min-w-0 space-y-10 pb-24">
       {/* ABOUT ME */}
       <SectionHeading>About Me</SectionHeading>
 
-      <div className="grid lg:grid-cols-2 gap-10 min-w-0">
+      <div className="grid gap-10 min-w-0 lg:grid-cols-2">
         {/* Bio */}
-        <div className="space-y-4 min-w-0">
-          <p className="text-black/70 dark:text-white/70 whitespace-normal break-words [overflow-wrap:anywhere]">
+        <div className="min-w-0 space-y-6 leading-relaxed">
+          <p className="text-black/80 dark:text-white/80 break-words">
             Hello! I’m Ajit Singh Yadav, a MERN developer who enjoys building
             clean, accessible UIs and production-ready APIs.
           </p>
-          <p className="text-black/70 dark:text-white/70 whitespace-normal break-words [overflow-wrap:anywhere]">
+          <p className="text-black/80 dark:text-white/80 break-words">
             I enjoy turning ideas into fast, reliable web experiences with
             React, Tailwind, Node, Express, and MongoDB.
           </p>
-          <p className="text-black/70 dark:text-white/70 whitespace-normal break-words [overflow-wrap:anywhere]">
+          <p className="text-black/80 dark:text-white/80 break-words">
             With a Master’s in Artificial Intelligence and a Bachelor’s in
             Computing, I bring strong expertise in ML, NLP, and deep learning.
             I’ve worked across startups and larger teams, thriving both as an
@@ -52,19 +52,37 @@ export default function AboutTab() {
         </div>
 
         {/* Details */}
-        <div>
-          <dl className="grid sm:grid-cols-2 gap-x-6 gap-y-3 min-w-0">
+        <div className="min-w-0">
+          <dl className="grid min-w-0 grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
             {[
               ["Name", "Ajit Singh Yadav"],
               ["Location", "Lucan, Dublin"],
-              ["Email", "yadav.ajitsingh87@gmail.com"],
-              ["Phone", "+353 838 125 487"],
+              [
+                "Email",
+                <a
+                  key="email"
+                  href="mailto:yadav.ajitsingh87@gmail.com"
+                  className="underline decoration-transparent hover:decoration-current"
+                >
+                  yadav.ajitsingh87@gmail.com
+                </a>,
+              ],
+              [
+                "Phone",
+                <a
+                  key="phone"
+                  href="tel:+353838125487"
+                  className="underline decoration-transparent hover:decoration-current"
+                >
+                  +353 838 125 487
+                </a>,
+              ],
             ].map(([label, value]) => (
-              <div key={label} className="flex gap-3 min-w-0">
-                <dt className="min-w-0 text-black/70 dark:text-white/70 break-words [overflow-wrap:anywhere]s">
+              <div key={label} className="min-w-0 flex items-start gap-3">
+                <dt className="shrink-0 font-semibold text-black dark:text-white">
                   {label}:
                 </dt>
-                <dd className="text-black/70 dark:text-white/70 break-words">
+                <dd className="min-w-0 flex-1 text-black/80 dark:text-white/80 break-words">
                   {value}
                 </dd>
               </div>
@@ -74,7 +92,7 @@ export default function AboutTab() {
           {/* CV Button */}
           <div className="mt-6">
             <a
-              href="/Full_stack_developer_AJIT SINIGH YADAV_CV.pdf"
+              href="/Full_stack_developer_AJIT%20SINIGH%20YADAV_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl border px-5 py-2.5 text-sm font-semibold
@@ -89,7 +107,7 @@ export default function AboutTab() {
 
       {/* SERVICES */}
       <SectionHeading>Services</SectionHeading>
-      <ul className="space-y-3 min-w-0">
+      <ul className="min-w-0 space-y-3">
         {services.map((s) => (
           <li
             key={s}
@@ -103,13 +121,13 @@ export default function AboutTab() {
 
       {/* TECH STACK */}
       <SectionHeading>Tech Stack</SectionHeading>
-      <div className="grid sm:grid-cols-2 gap-6 min-w-0">
+      <div className="min-w-0 grid gap-6 sm:grid-cols-2">
         {Object.entries(skills).map(([category, items]) => (
-          <div key={category} className="space-y-3">
+          <div key={category} className="space-y-3 min-w-0">
             <h3 className="text-base font-semibold capitalize">{category}</h3>
             {items.map((skill) => (
-              <div key={skill} className="space-y-2">
-                <div className="flex items-center justify-between">
+              <div key={skill} className="space-y-2 min-w-0">
+                <div className="flex items-center justify-between min-w-0">
                   <span className="text-sm font-medium">{skill}</span>
                   <span className="text-xs text-black/60 dark:text-white/60">
                     —
