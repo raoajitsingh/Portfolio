@@ -33,6 +33,7 @@ export default function Hero() {
             flex flex-col
             px-4 md:px-6 lg:pl-8
             py-6 md:py-6 lg:py-0
+            overflow-x-hidden
             overflow-y-auto overscroll-contain
             scroll-pt-6
             pb-[env(safe-area-inset-bottom)]

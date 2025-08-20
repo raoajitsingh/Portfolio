@@ -14,8 +14,15 @@ export default function SectionHeading({
       : "justify-start";
 
   return (
-    <div className={clsx("flex items-center gap-4", justify, className)}>
-      <h3 className="whitespace-nowrap text-xs sm:text-sm font-extrabold uppercase tracking-[0.35em]">
+    <div
+      className={clsx("flex items-center gap-4 min-w-0", justify, className)}
+    >
+      <h3
+        className="text-xs sm:text-sm font-extrabold uppercase
+    whitespace-normal sm:whitespace-nowrap 
+    tracking-[0.2em] sm:tracking-[0.35em]
+    min-w-0  "
+      >
         {children}
       </h3>
       <hr className="flex-1 border-t border-black/20 dark:border-white/20" />

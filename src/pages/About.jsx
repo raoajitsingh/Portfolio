@@ -28,14 +28,14 @@ export default function AboutTab() {
   ];
 
   return (
-    <section className="space-y-10 pb-24">
+    <section className="space-y-10 pb-24 min-w-0">
       {/* ABOUT ME */}
       <SectionHeading>About Me</SectionHeading>
 
-      <div className="grid lg:grid-cols-2 gap-10">
+      <div className="grid lg:grid-cols-2 gap-10 min-w-0">
         {/* Bio */}
-        <div className="space-y-4">
-          <p className="text-black/70 dark:text-white/70">
+        <div className="space-y-4 min-w-0">
+          <p className="text-black/70 dark:text-white/70 break-words">
             Hello! I’m Ajit Singh Yadav, a MERN developer who enjoys building
             clean, accessible UIs and production-ready APIs.
           </p>
@@ -89,7 +89,7 @@ export default function AboutTab() {
 
       {/* SERVICES */}
       <SectionHeading>Services</SectionHeading>
-      <ul className="space-y-3">
+      <ul className="space-y-3 min-w-0">
         {services.map((s) => (
           <li
             key={s}
@@ -103,7 +103,7 @@ export default function AboutTab() {
 
       {/* TECH STACK */}
       <SectionHeading>Tech Stack</SectionHeading>
-      <div className="grid sm:grid-cols-2 gap-6">
+      <div className="grid sm:grid-cols-2 gap-6 min-w-0">
         {Object.entries(skills).map(([category, items]) => (
           <div key={category} className="space-y-3">
             <h3 className="text-base font-semibold capitalize">{category}</h3>
