@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 
-const containerStyle = {
-  width: "100%",
-  height: "400px",
-};
+// const containerStyle = {
+//   width: "100%",
+//   height: "400px",
+// };
 
 const lucanCoords = { lat: 53.35715, lng: -6.44856 };
 
@@ -53,7 +53,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="grid lg:grid-cols-2 gap-8">
+    <section className="grid lg:grid-cols-2 gap-8 auto-rows-fr">
       {/* Form */}
       <div>
         <h2 className="text-3xl font-bold">Get in touch</h2>
@@ -116,19 +116,22 @@ export default function Contact() {
       </div>
 
       {/* Map */}
-      <div className="rounded-xl overflow-hidden shadow-lg border">
+      <div
+        className="rounded-xl overflow-hidden shadow-lg border border-black/10 dark:border-white/10
+                  h-full min-h-[320px]"
+      >
         {isLoaded ? (
           <GoogleMap
-            mapContainerStyle={containerStyle}
+            mapContainerStyle={{ width: "100%", height: "100%" }}
             center={lucanCoords}
             zoom={14}
           >
             <Marker position={lucanCoords} />
           </GoogleMap>
         ) : (
-          <p className="flex items-center justify-center h-full">
-            Loading map...
-          </p>
+          <div className="flex items-center justify-center h-full">
+            Loading map…
+          </div>
         )}
       </div>
     </section>
