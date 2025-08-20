@@ -5,7 +5,7 @@ export default function Portfolio() {
     {
       title: "AI Notes App",
       desc: "MERN + OpenAI powered app for creating and managing AI-assisted notes.",
-      link: "#",
+      link: "https://ai-notes-frontend-mu.vercel.app",
     },
     {
       title: "Authentication System",
@@ -34,6 +34,8 @@ export default function Portfolio() {
           <a
             key={p.title}
             href={p.link}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group block rounded-2xl border border-black/10 dark:border-white/10 p-5 transition
                        hover:border-black/40 dark:hover:border-white/40"
           >
