@@ -36,6 +36,7 @@ export default function Hero() {
             overflow-x-hidden
             overflow-y-auto overscroll-contain
             scroll-pt-6
+            md:pb-8
             pb-[env(safe-area-inset-bottom)]
           "
         >
