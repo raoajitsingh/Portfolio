@@ -20,7 +20,7 @@ export default function Hero() {
         {/* Left: fixed photo (hidden on mobile) */}
         <div className="hidden md:block w-full h-full min-h-0">
           <img
-            src="/rao2.jpeg"
+            src="/rao2.jpg"
             alt="Ajit Singh Yadav"
             className="w-full h-full object-cover"
           />
