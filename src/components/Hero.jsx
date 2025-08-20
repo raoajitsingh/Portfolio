@@ -29,7 +29,7 @@ export default function Hero() {
         {/* Right: scrollable content area */}
         <div
           className="
-            h-full min-h-0
+            h-full min-h-0 min-w-0
             flex flex-col
             px-4 md:px-6 lg:pl-8
             py-6 md:py-6 lg:py-0

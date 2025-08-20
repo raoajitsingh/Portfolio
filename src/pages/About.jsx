@@ -35,15 +35,15 @@ export default function AboutTab() {
       <div className="grid lg:grid-cols-2 gap-10 min-w-0">
         {/* Bio */}
         <div className="space-y-4 min-w-0">
-          <p className="text-black/70 dark:text-white/70 break-words">
+          <p className="text-black/70 dark:text-white/70 whitespace-normal break-words [overflow-wrap:anywhere]">
             Hello! I’m Ajit Singh Yadav, a MERN developer who enjoys building
             clean, accessible UIs and production-ready APIs.
           </p>
-          <p className="text-black/70 dark:text-white/70">
+          <p className="text-black/70 dark:text-white/70 whitespace-normal break-words [overflow-wrap:anywhere]">
             I enjoy turning ideas into fast, reliable web experiences with
             React, Tailwind, Node, Express, and MongoDB.
           </p>
-          <p className="text-black/70 dark:text-white/70">
+          <p className="text-black/70 dark:text-white/70 whitespace-normal break-words [overflow-wrap:anywhere]">
             With a Master’s in Artificial Intelligence and a Bachelor’s in
             Computing, I bring strong expertise in ML, NLP, and deep learning.
             I’ve worked across startups and larger teams, thriving both as an
@@ -53,15 +53,15 @@ export default function AboutTab() {
 
         {/* Details */}
         <div>
-          <dl className="space-y-6">
+          <dl className="grid sm:grid-cols-2 gap-x-6 gap-y-3 min-w-0">
             {[
               ["Name", "Ajit Singh Yadav"],
               ["Location", "Lucan, Dublin"],
               ["Email", "yadav.ajitsingh87@gmail.com"],
               ["Phone", "+353 838 125 487"],
             ].map(([label, value]) => (
-              <div key={label} className="flex gap-3">
-                <dt className="w-28 font-semibold text-black/80 dark:text-white">
+              <div key={label} className="flex gap-3 min-w-0">
+                <dt className="min-w-0 text-black/70 dark:text-white/70 break-words [overflow-wrap:anywhere]s">
                   {label}:
                 </dt>
                 <dd className="text-black/70 dark:text-white/70 break-words">

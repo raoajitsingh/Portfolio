@@ -21,7 +21,7 @@ export default function SectionHeading({
         className="text-xs sm:text-sm font-extrabold uppercase
     whitespace-normal sm:whitespace-nowrap 
     tracking-[0.2em] sm:tracking-[0.35em]
-    min-w-0  "
+    min-w-0 "
       >
         {children}
       </h3>
