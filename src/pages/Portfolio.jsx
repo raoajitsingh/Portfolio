@@ -12,7 +12,7 @@ export default function Portfolio() {
     {
       title: "Authentication System",
       desc: "User registration and login with JWT, OTP verification, and secure password handling.",
-      link: null,
+      link: "https://auth-frontend-omega-one.vercel.app",
     },
     {
       title: "E-commerce (MERN)",
